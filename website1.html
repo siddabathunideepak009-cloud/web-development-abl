@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>PowerFit Gym</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:Arial;
+    background:#111;
+    color:white
+}
+
+header{
+    background:#222;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+.logo{
+    color:#ff3838;
+    font-size:28px;
+    font-weight:bold
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:12px
+}
+
+nav a:hover{color:#ff3838}
+
+.hero{
+    text-align:center;
+    padding:85px 20px;
+    background:linear-gradient(#0009,#000b),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200') center/cover
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px
+}
+
+.hero span{color:#ff3838}
+
+.btn{
+    display:inline-block;
+    background:#ff3838;
+    color:white;
+    padding:12px 25px;
+    margin-top:20px;
+    text-decoration:none;
+    border-radius:5px
+}
+
+section{
+    padding:45px 8%;
+    text-align:center
+}
+
+h2{
+    font-size:30px;
+    margin-bottom:25px
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap
+}
+
+.card{
+    background:#222;
+    padding:25px;
+    border-radius:10px;
+    width:260px;
+}
+
+.card h3{color:#ff3838;margin-bottom:12px}
+.card p{line-height:1.8}
+.price{font-size:27px;color:#ff3838;margin:15px}
+
+table{width:100%;border-collapse:collapse;background:#222}
+th,td{padding:14px;border:1px solid #444}
+th{background:#ff3838}
+
+input,select{width:100%;padding:12px;margin:9px 0;border:0;border-radius:5px}
+form{max-width:450px;margin:auto;background:#222;padding:25px;border-radius:10px}
+
+button{background:#ff3838;color:white;border:0;padding:13px 30px;border-radius:5px;cursor:pointer}
+button:hover,.btn:hover{background:#cc2222}
+
+footer{background:#222;padding:20px;text-align:center;color:#aaa}
+
+@media(max-width:600px){
+    header{flex-direction:column;gap:15px}
+    nav a{margin:5px;font-size:13px}
+    .hero h1{font-size:32px}
+    section{padding:35px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">POWERFIT 💪</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#programs">Programs</a>
+<a href="#trainers">Trainers</a>
+<a href="#plans">Plans</a>
+<a href="#join">Join</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h1>BUILD YOUR <span>BODY</span></h1>
+<p>Train Hard. Stay Strong. Be Unstoppable.</p>
+<a href="#join" class="btn">JOIN NOW</a>
+</div>
+
+<section id="programs">
+<h2>OUR WORKOUT PROGRAMS</h2>
+<div class="cards">
+<div class="card"><h3>💪 Strength Training</h3><p>Build muscles and improve your strength with expert guidance.</p></div>
+<div class="card"><h3>🏃 Cardio Fitness</h3><p>Burn calories and improve your stamina and health.</p></div>
+<div class="card"><h3>🧘 Yoga & Zumba</h3><p>Improve flexibility, balance and overall fitness.</p></div>
+</div>
+</section>
+
+<section id="trainers">
+<h2>MEET OUR TRAINERS</h2>
+<div class="cards">
+<div class="card"><h3>John Smith</h3><p>Strength Coach</p><p>5 Years Experience</p></div>
+<div class="card"><h3>David Roy</h3><p>Fitness Trainer</p><p>7 Years Experience</p></div>
+<div class="card"><h3>Sarah Lee</h3><p>Yoga Instructor</p><p>4 Years Experience</p></div>
+</div>
+</section>
+
+<section id="plans">
+<h2>MEMBERSHIP PLANS</h2>
+<div class="cards">
+<div class="card"><h3>Basic</h3><div class="price">₹999</div><p>Monthly Access<br>Gym Equipment<br>Locker Facility</p></div>
+<div class="card"><h3>Standard</h3><div class="price">₹1499</div><p>Full Gym Access<br>Personal Guidance<br>Group Classes</p></div>
+<div class="card"><h3>Premium</h3><div class="price">₹2499</div><p>All Facilities<br>Personal Trainer<br>Diet Guidance</p></div>
+</div>
+</section>
+
+<section>
+<h2>CLASS SCHEDULE</h2>
+<table>
+<tr><th>Class</th><th>Time</th><th>Days</th></tr>
+<tr><td>Cardio</td><td>6:00 AM</td><td>Mon - Fri</td></tr>
+<tr><td>Yoga</td><td>8:00 AM</td><td>Mon - Sat</td></tr>
+<tr><td>Strength</td><td>5:00 PM</td><td>Mon - Fri</td></tr>
+<tr><td>Zumba</td><td>6:30 PM</td><td>Tue - Sat</td></tr>
+</table>
+</section>
+
+<section id="join">
+<h2>JOIN OUR GYM</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="tel" placeholder="Phone Number" required>
+<select required>
+<option value="">Choose Membership</option>
+<option>Basic</option>
+<option>Standard</option>
+<option>Premium</option>
+</select>
+<button type="submit">REGISTER NOW</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 POWERFIT GYM | Train Hard, Live Strong!</p>
+<p>Contact: powerfit@gmail.com</p>
+</footer>
+
+</body>
+</html>

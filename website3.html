@@ -1,0 +1,136 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dream Homes</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#f2f5f9;color:#222}
+header{background:#12304a;color:white;padding:25px;text-align:center}
+nav{background:#1c4968;padding:15px;text-align:center}
+nav a{color:white;text-decoration:none;margin:15px}
+.hero{background:#b5d8e8;padding:55px 20px;text-align:center}
+.hero h1{font-size:35px;color:#12304a}
+.hero p{margin:12px}
+.search{padding:20px;text-align:center}
+input,select,button{padding:12px;margin:5px;border:1px solid #ccc;border-radius:6px}
+button{background:#12304a;color:white;cursor:pointer}
+h2{text-align:center;margin:25px;color:#12304a}
+.container{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:20px}
+.card{background:white;width:280px;border-radius:12px;overflow:hidden;box-shadow:0 3px 12px #bbb;transition:.3s}
+.card:hover{transform:translateY(-7px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card div{padding:15px}
+.price{color:#16845b;font-size:22px;font-weight:bold;margin:10px 0}
+table{width:90%;margin:20px auto;border-collapse:collapse;background:white}
+th,td{padding:13px;border:1px solid #ccc;text-align:center}
+th{background:#12304a;color:white}
+footer{background:#12304a;color:white;text-align:center;padding:20px;margin-top:30px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🏡 DREAM HOMES</h1>
+<p>Find Your Perfect Place to Live</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#properties">Properties</a>
+<a href="#compare">Compare</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Find Your Dream Property</h1>
+<p>Discover beautiful homes at affordable prices.</p>
+<button onclick="document.getElementById('properties').scrollIntoView()">Explore Properties</button>
+</section>
+
+<section class="search">
+<h2>Search Properties</h2>
+<input type="text" placeholder="Enter location">
+<select>
+<option>All Properties</option>
+<option>House</option>
+<option>Apartment</option>
+<option>Rental</option>
+</select>
+<select>
+<option>Any Budget</option>
+<option>Below ₹50 Lakhs</option>
+<option>₹50 Lakhs - ₹1 Crore</option>
+<option>Above ₹1 Crore</option>
+</select>
+<button>Search</button>
+</section>
+
+<h2 id="properties">Featured Properties</h2>
+
+<section class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600">
+<div>
+<h3>Luxury Villa</h3>
+<p>📍 Vijayawada</p>
+<p class="price">₹85 Lakhs</p>
+<p>🛏 3 Bedrooms | 🚿 2 Bathrooms</p>
+<p>Garden, Parking, Swimming Pool</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600">
+<div>
+<h3>Modern Apartment</h3>
+<p>📍 Hyderabad</p>
+<p class="price">₹65 Lakhs</p>
+<p>🛏 2 Bedrooms | 🚿 2 Bathrooms</p>
+<p>Gym, Lift, Security</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600">
+<div>
+<h3>Family House</h3>
+<p>📍 Guntur</p>
+<p class="price">₹45 Lakhs</p>
+<p>🛏 3 Bedrooms | 🚿 2 Bathrooms</p>
+<p>Parking, Garden, Balcony</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600">
+<div>
+<h3>Premium Rental Home</h3>
+<p>📍 Bengaluru</p>
+<p class="price">₹18,000 / Month</p>
+<p>🛏 2 Bedrooms | 🚿 1 Bathroom</p>
+<p>Wi-Fi, Furnished, Parking</p>
+</div>
+</div>
+
+</section>
+
+<h2 id="compare">Property Comparison</h2>
+<table>
+<tr><th>Property</th><th>Location</th><th>Bedrooms</th><th>Price</th></tr>
+<tr><td>Luxury Villa</td><td>Vijayawada</td><td>3</td><td>₹85 Lakhs</td></tr>
+<tr><td>Modern Apartment</td><td>Hyderabad</td><td>2</td><td>₹65 Lakhs</td></tr>
+<tr><td>Family House</td><td>Guntur</td><td>3</td><td>₹45 Lakhs</td></tr>
+<tr><td>Rental Home</td><td>Bengaluru</td><td>2</td><td>₹18,000</td></tr>
+</table>
+
+<footer id="contact">
+<h3>🏡 DREAM HOMES</h3>
+<p>Your Dream Home Is Just One Step Away!</p>
+<p>Contact: dreamhomes@gmail.com</p>
+<p>© 2026 Dream Homes | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
